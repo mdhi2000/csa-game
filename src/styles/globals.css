@@ -1,8 +1,19 @@
+@font-face {
+  font-family: "IRANSans";
+  src: url("/IRANSans/IRANSans.eot");
+  src: url("/IRANSans/IRANSans.eot?#iefix")
+      format("embedded-opentype"),
+    url("/IRANSans/IRANSans.woff2") format("woff2"),
+    url("/IRANSans/IRANSans.woff") format("woff"),
+    url("/IRANSans/IRANSans.ttf") format("truetype"),
+    url("/IRANSans/IRANSans.svg#IRANSans") format("svg");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +35,13 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+html,
+body,
+#__next {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
